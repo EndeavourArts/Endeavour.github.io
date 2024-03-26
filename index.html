@@ -16,11 +16,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="simplyCountdown.theme.default.css"/>
+    <link rel="stylesheet" href="simplyCountdown.theme.default.css" />
     <script src="./simplyCountdown.min.js"></script>
   </head>
   <body>
-    
     <section
       id="hero"
       class="hero w-100 h-100 p-3 mx-auto d-flex text-center justify-content-center align-items-center text-white">
@@ -28,47 +27,254 @@
         <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
         <h1>Niken & Wira</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
-        <div id="countdown" class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <div id="countdown" class="simply-countdown mx-auto"></div>
+        <a href="#home" class="btn btn-lg mt-4">Lihat Undangan</a>
       </main>
     </section>
-    
-    
-    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top myNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Endeavour</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Endeavour</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#location">Location</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ----- -->
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h3>Acara Pernikahan</h3>
+            <h4>Diselenggarakan pada 20 April 2024 di Subang, Jawa Barat.</h4>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami mengundang Bapak/Ibu,
+              Saudara/i, untuk hadir pada acara pernikahan kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Wira Wira</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur omnis itaque quod eaque maxime provident est,
+                  repellendus iste dolore? Similique quibusdam numquam
+                  consequatur sunt veritatis.
+                </p>
+                <p>
+                  Putra dari Bpk. Lorem <br />
+                  dan <br />
+                  Ibu Ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="./assets/Images/Bride-cowo.png"
+                  alt="Wira"
+                  class="img-responsive rounded-circle" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="./assets/Images/Bride-cowo.png"
+                  alt="Wira"
+                  class="img-responsive rounded-circle" />
+              </div>
+              <div class="col-8 text-start">
+                <h3>Niken Sonia Astuti</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur omnis itaque quod eaque maxime provident est,
+                  repellendus iste dolore? Similique quibusdam numquam
+                  consequatur sunt veritatis.
+                </p>
+                <p>
+                  Putri dari<br />
+                  Ibu Endang Kurniati
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <img
+              src="./assets/Images/Gor.png"
+              alt="GOR GWS"
+              class="rounded-4 my-4" />
+            <p class="alamat">
+              Alamat: GRQ6+667, Jl. Raya Kamarung, Pagaden, Kec. Pagaden,
+              Kabupaten Subang, Jawa Barat 41252
+            </p>
+            <a
+              href="https://maps.app.goo.gl/n4j8eY5UQoCQxYFg8"
+              target="_blank"
+              class="btn btn-sm"
+              >Click to Show a Map</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, bisa jadi anda salah jadwal atau salah tempat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10.00 WIB </span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-clock"></i>
+                    <span>Sabtu, 20 April 2024 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-body-secondary">
+                diharapkan untuk kondusif untuk menjaga kekhidmatan dan
+                kekhusyuan seluruh prosesi pernikahan.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story mt-5">
+        <h1 class="mb-4">Love Story</h1>
+        <ul>
+          <li style="--accent-color: #f14e95">
+            <div class="date">2002</div>
+            <div class="title">Title 1</div>
+            <div class="descr">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+              itaque hic quibusdam fugiat est numquam harum, accusamus suscipit
+              consequatur laboriosam!
+            </div>
+          </li>
+          <li style="--accent-color: #f14e95">
+            <div class="date">2007</div>
+            <div class="title">Title 2</div>
+            <div class="descr">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+              adipisci nobis nostrum vero nihil veniam.
+            </div>
+          </li>
+          <li style="--accent-color: #f14e95">
+            <div class="date">2012</div>
+            <div class="title">Title 3</div>
+            <div class="descr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              minima consequuntur soluta placeat iure totam commodi repellendus
+              ea delectus, libero fugit quod reprehenderit, sequi quo, et
+              dolorum saepe nulla hic.
+            </div>
+          </li>
+          <li style="--accent-color: #f14e95">
+            <div class="date">2017</div>
+            <div class="title">Title 4</div>
+            <div class="descr">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
+              cumque.
+            </div>
+          </li>
+          <li style="--accent-color: #f14e95">
+            <div class="date">2022</div>
+            <div class="title">Title 5</div>
+            <div class="descr">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              non.
+            </div>
+          </li>
+        </ul>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-      <script>
-        simplyCountdown('#countdown',{
-            year: 2024, // required
-            month: 4, // required
-            day: 20, // required
-            hours: 8, // Default is 0 [0-23] integer
-            minutes: 0, // Default is 0 [0-59] integer
-            seconds: 0, // Default is 0 [0-59] integer
-            words: { //words displayed into the countdown
-                days: { singular: 'Hari', plural: 'Hari' },
-                hours: { singular: 'Jam', plural: 'Jam' },
-                minutes: { singular: 'menit', plural: 'menit' },
-                seconds: { singular: 'detik', plural: 'detik' }
-            },
-            plural: true, //use plurals
-            inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
-            inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
-            // in case of inline set to false
-            enableUtc: false,
-            onEnd: function () {
-                // your code
-                return;
-            },
-            refresh: 1000, //default refresh every 1s
-            sectionClass: 'simply-section', //section css class
-            amountClass: 'simply-amount', // amount css class
-            wordClass: 'simply-word', // word css class
-            zeroPad: false,
-            countUp: false, // enable count up if set to true
-        });
-      </script>
+    <script>
+      simplyCountdown("#countdown", {
+        year: 2024, // required
+        month: 4, // required
+        day: 20, // required
+        hours: 8, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Hari", plural: "Hari" },
+          hours: { singular: "Jam", plural: "Jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+        plural: true, //use plurals
+        inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
+        inlineClass: "simply-countdown-inline", //inline css span class in case of inline = true
+        // in case of inline set to false
+        enableUtc: false,
+        onEnd: function () {
+          // your code
+          return;
+        },
+        refresh: 1000, //default refresh every 1s
+        sectionClass: "simply-section", //section css class
+        amountClass: "simply-amount", // amount css class
+        wordClass: "simply-word", // word css class
+        zeroPad: false,
+        countUp: false, // enable count up if set to true
+      });
+    </script>
   </body>
 </html>
