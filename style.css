@@ -156,7 +156,7 @@ body {
     width: 100%;
 }
 
-.info {
+.info, .rsvp{
     background-color: var(--bg);
     color: white;
     padding-top: 10rem;
@@ -206,7 +206,7 @@ body {
     font-weight: 300;
     color: white !important;
 }
-.story h1 {
+.story h1, .gallery h2, .rsvp h2  {
     text-align: center;
     font-family: 'Sacramento', cursive;
     font-weight: bold;
@@ -374,4 +374,31 @@ body {
       border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
     }
   }
-  
+
+  .gallery, .rsvp{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .gallery{
+    background-image: url(./assets/Images/background-home2.png);
+    background-size: cover;
+  }
+
+  .rsvp p{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .rsvp button {
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+    margin-top: 12px;
+  }
+  .rsvp button:hover {
+    background-color: white;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+   
+  }

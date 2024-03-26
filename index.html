@@ -28,7 +28,9 @@
         <h1>Niken & Wira</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
         <div id="countdown" class="simply-countdown mx-auto"></div>
-        <a href="#home" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScrollHero()"
+          >Lihat Undangan</a
+        >
       </main>
     </section>
 
@@ -64,7 +66,7 @@
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#location">Location</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
               <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
@@ -191,59 +193,195 @@
       </div>
     </section>
 
-    <section id="story" class="story mt-5">
-        <h1 class="mb-4">Love Story</h1>
-        <ul>
-          <li style="--accent-color: #f14e95">
-            <div class="date">2002</div>
-            <div class="title">Title 1</div>
-            <div class="descr">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-              itaque hic quibusdam fugiat est numquam harum, accusamus suscipit
-              consequatur laboriosam!
+    <section id="story" class="story my-5">
+      <h1 class="mb-4">Love Story</h1>
+      <ul>
+        <li style="--accent-color: #f14e95">
+          <div class="date">2002</div>
+          <div class="title">Title 1</div>
+          <div class="descr">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+            itaque hic quibusdam fugiat est numquam harum, accusamus suscipit
+            consequatur laboriosam!
+          </div>
+        </li>
+        <li style="--accent-color: #f14e95">
+          <div class="date">2007</div>
+          <div class="title">Title 2</div>
+          <div class="descr">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+            adipisci nobis nostrum vero nihil veniam.
+          </div>
+        </li>
+        <li style="--accent-color: #f14e95">
+          <div class="date">2012</div>
+          <div class="title">Title 3</div>
+          <div class="descr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima
+            consequuntur soluta placeat iure totam commodi repellendus ea
+            delectus, libero fugit quod reprehenderit, sequi quo, et dolorum
+            saepe nulla hic.
+          </div>
+        </li>
+        <li style="--accent-color: #f14e95">
+          <div class="date">2017</div>
+          <div class="title">Title 4</div>
+          <div class="descr">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
+            cumque.
+          </div>
+        </li>
+        <li style="--accent-color: #f14e95">
+          <div class="date">2022</div>
+          <div class="title">Title 5</div>
+          <div class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center my-5">
+            <h2>Galeri Foto</h2>
+          </div>
+        </div>
+
+        <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2">
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/10/1200/768"
+              data-toggle="lightbox"
+              data-gallery="example-gallery"
+              class="col-sm-4">
+              <img
+                src="https://picsum.photos/id/10/300/400"
+                alt="dummy foto"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/11/1200/768"
+              data-toggle="lightbox"
+              data-gallery="example-gallery"
+              class="col-sm-4">
+              <img
+                src="https://picsum.photos/id/11/300/400"
+                alt="dummy foto"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/12/1200/768"
+              data-toggle="lightbox"
+              data-gallery="example-gallery"
+              class="col-sm-4">
+              <img
+                src="https://picsum.photos/id/12/300/400"
+                alt="dummy foto"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/13/1200/768"
+              data-toggle="lightbox"
+              data-gallery="example-gallery"
+              class="col-sm-4">
+              <img
+                src="https://picsum.photos/id/13/300/400"
+                alt="dummy foto"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/14/1200/768"
+              data-toggle="lightbox"
+              data-gallery="example-gallery"
+              class="col-sm-4">
+              <img
+                src="https://picsum.photos/id/14/300/400"
+                alt="dummy foto"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/15/1200/768"
+              data-toggle="lightbox"
+              data-gallery="example-gallery"
+              class="col-sm-4">
+              <img
+                src="https://picsum.photos/id/15/300/400"
+                alt="dummy foto"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          </div>
+          <form
+            class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbx6aB-e8EZnBlZugP7UqiQFjee2SPAT-KWggaWtfp8t1oja38WxdEifzbNkItCSpbPIVw/exec" id="my-form">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" />
+              </div>
             </div>
-          </li>
-          <li style="--accent-color: #f14e95">
-            <div class="date">2007</div>
-            <div class="title">Title 2</div>
-            <div class="descr">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-              adipisci nobis nostrum vero nihil veniam.
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="jumlah" class="form-label">Jumlah</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="jumlah"
+                  name="jumlah"
+                  value="1"
+                  min="1"
+                  max="5"
+                  length="1" />
+              </div>
             </div>
-          </li>
-          <li style="--accent-color: #f14e95">
-            <div class="date">2012</div>
-            <div class="title">Title 3</div>
-            <div class="descr">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              minima consequuntur soluta placeat iure totam commodi repellendus
-              ea delectus, libero fugit quod reprehenderit, sequi quo, et
-              dolorum saepe nulla hic.
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="Status" class="form-label">Status</label>
+                <select name="status" id="status" class="form-select">
+                  <option selected>Pilih salah satu</option>
+                  <option value="1">Hadir</option>
+                  <option value="0">Tidak Hadir</option>
+                </select>
+              </div>
             </div>
-          </li>
-          <li style="--accent-color: #f14e95">
-            <div class="date">2017</div>
-            <div class="title">Title 4</div>
-            <div class="descr">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
-              cumque.
+            <div class="col-12">
+              <button class="btn btn-primary">Kirim</button>
             </div>
-          </li>
-          <li style="--accent-color: #f14e95">
-            <div class="date">2022</div>
-            <div class="title">Title 5</div>
-            <div class="descr">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              non.
-            </div>
-          </li>
-        </ul>
+          </form>
+        </div>
+      </div>
     </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
     <script>
       simplyCountdown("#countdown", {
         year: 2024, // required
@@ -274,6 +412,44 @@
         wordClass: "simply-word", // word css class
         zeroPad: false,
         countUp: false, // enable count up if set to true
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      function disableScrollHero() {
+        const y = window.pageYOffset || document.documentElement.scrollTop;
+        const x = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(y, x);
+        };
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScrollHero() {
+        window.onscroll = function () {
+          rootElement.style.scrollBehavior = "smooth";
+        };
+      }
+
+      disableScrollHero();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Terimakasih telah mengonfirmasi kehadiran Anda!");
+          });
+        });
       });
     </script>
   </body>
