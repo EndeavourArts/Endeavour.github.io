@@ -375,12 +375,53 @@
       </div>
     </section>
 
+    <section class="gifts" id="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah 🎁</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, architecto!</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                123456789 - NIKEN SONIA ASTUTI
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">MANDIRI</div>
+                123456789 - NIKEN SONIA ASTUTI
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="audio-container">
+      <audio id="bgm" autoplay loop>
+        <source src="./assets/audio/audio.mp3" type="audio/mp3">
+      </audio>
+
+      <div class="audio-icon-wrapper" style="">
+        <i class="bi bi-disc"></i>
+    </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous">
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js">
+
+    </script>
 
     <script>
       simplyCountdown("#countdown", {
@@ -431,8 +472,14 @@
         window.onscroll = function () {
           rootElement.style.scrollBehavior = "smooth";
         };
+
+        playAudio();
       }
 
+      function playAudio(){
+         const bgm = document.querySelector('#bgm');
+         bgm.play();
+      }
       disableScrollHero();
     </script>
 

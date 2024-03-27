@@ -206,7 +206,7 @@ body {
     font-weight: 300;
     color: white !important;
 }
-.story h1, .gallery h2, .rsvp h2  {
+.story h1, .gallery h2, .rsvp h2, .gifts h2  {
     text-align: center;
     font-family: 'Sacramento', cursive;
     font-weight: bold;
@@ -375,7 +375,7 @@ body {
     }
   }
 
-  .gallery, .rsvp{
+  .gallery, .rsvp, .gifts{
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
@@ -385,7 +385,7 @@ body {
     background-size: cover;
   }
 
-  .rsvp p{
+  .rsvp p, .gifts p{
     font-size: 1rem;
     font-weight: 300;
   }
@@ -400,5 +400,25 @@ body {
     background-color: white;
     color: var(--pink);
     border: 1px solid var(--pink);
-   
+  }
+
+  .gifts span {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
   }
