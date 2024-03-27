@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wira & Nikah 💍</title>
+    <title>Niken & Wira 💍</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/Images/Logo-title2.jpg" />
     <link
@@ -92,28 +92,22 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                <h3>Wira Wira</h3>
+                <h3>Wirafadly Ahmad, S.Pd.</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Consequuntur omnis itaque quod eaque maxime provident est,
-                  repellendus iste dolore? Similique quibusdam numquam
-                  consequatur sunt veritatis.
-                </p>
-                <p>
-                  Putra dari Bpk. Lorem <br />
+                  Putra kedua dari <br /> Bpk. Martono, S.Pd., M.Si. <br />
                   dan <br />
-                  Ibu Ipsum
+                  Ibu Sri Nurani
                 </p>
               </div>
               <div class="col-4">
                 <img
                   src="./assets/Images/Bride-cowo.png"
-                  alt="Wira"
+                  alt="Wirafadly"
                   class="img-responsive rounded-circle" />
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 couple-left">
             <div class="row">
               <div class="col-4">
                 <img
@@ -122,16 +116,10 @@
                   class="img-responsive rounded-circle" />
               </div>
               <div class="col-8 text-start">
-                <h3>Niken Sonia Astuti</h3>
+                <h3>Niken Sonia Astuti A.Md</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Consequuntur omnis itaque quod eaque maxime provident est,
-                  repellendus iste dolore? Similique quibusdam numquam
-                  consequatur sunt veritatis.
-                </p>
-                <p>
-                  Putri dari<br />
-                  Ibu Endang Kurniati
+                  Putri pertama dari <br /> Bpk. Dedi Sumarsono<br />
+                  Ibu Endang Kurniati, S.Pd.Kim.
                 </p>
               </div>
             </div>
@@ -174,18 +162,31 @@
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
+                    <i class="bi bi-clock"></i>
+                    <span>Sabtu, 20 April 2024 </span>
+                  </div>
+                  <div class="col-md-6">
                     <i class="bi bi-clock d-block"></i>
                     <span>10.00 WIB </span>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center card-2">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
                   <div class="col-md-6">
                     <i class="bi bi-clock"></i>
                     <span>Sabtu, 20 April 2024 </span>
                   </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - 13.00 WIB </span>
+                  </div>
                 </div>
-              </div>
-              <div class="card-footer text-body-secondary">
-                diharapkan untuk kondusif untuk menjaga kekhidmatan dan
-                kekhusyuan seluruh prosesi pernikahan.
               </div>
             </div>
           </div>
@@ -359,7 +360,7 @@
             </div>
             <div class="col-12">
               <div class="mb-3">
-                <label for="Status" class="form-label">Status</label>
+                <label for="status" class="form-label">Kehadiran</label>
                 <select name="status" id="status" class="form-select">
                   <option selected>Pilih salah satu</option>
                   <option value="1">Hadir</option>
@@ -368,7 +369,38 @@
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary">Kirim</button>
+              <button class="btn btn-primary">Konfirmasi</button>
+            </div>
+          </form>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Pesan-pesan untuk Pengantin</h2>
+            <p>Beri pesan-pesan kepada para pengantin</p>
+          </div>
+          <form
+            class="row row-cols-lg-auto g-3 align-items-center justify-content-center"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbx6aB-e8EZnBlZugP7UqiQFjee2SPAT-KWggaWtfp8t1oja38WxdEifzbNkItCSpbPIVw/exec" id="my-form">
+            <div class="col-12 message">
+              <div class="mb-3">
+                <label for="namasender" class="form-label">Nama Pengirim</label>
+                <input type="text" class="form-control" id="namasender">
+              </div>
+              <div class="mb-3">
+                <label for="relation" class="form-label">Kenalan dari</label>
+                <select name="relation" id="relation" class="form-select">
+                  <option value="Wirafadly">Wirafadly Ahmad</option>
+                  <option value="Niken">Niken Sonia Astuti</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-primary">Kirim Pesan</button>
+              </div>
             </div>
           </form>
         </div>
@@ -404,9 +436,9 @@
 
 
     <div class="audio-container">
-      <audio id="bgm" autoplay loop>
+      <!-- <audio id="bgm" autoplay loop>
         <source src="./assets/audio/audio.mp3" type="audio/mp3">
-      </audio>
+      </audio> -->
 
       <div class="audio-icon-wrapper" style="">
         <i class="bi bi-disc"></i>
@@ -456,7 +488,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       const rootElement = document.querySelector(":root");
       function disableScrollHero() {
         const y = window.pageYOffset || document.documentElement.scrollTop;
@@ -481,7 +513,7 @@
          bgm.play();
       }
       disableScrollHero();
-    </script>
+    </script> -->
 
     <script>
       window.addEventListener("load", function () {

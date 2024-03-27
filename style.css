@@ -64,6 +64,10 @@ body {
   margin: 10px;
 }
 
+.message{
+  width: 50% !important;
+}
+
 /* media Query */
 /* Laptop */
 @media (max-width: 992px) {
@@ -90,6 +94,16 @@ body {
     text-align: center;
     font-size: 2rem;
   }
+
+  .card-2{
+    margin-top: 2rem;
+  }
+  .couple-left{
+    margin-top: 2rem !important;
+  }
+  .message {
+    width: 100% !important;
+  }
 }
 
 /* mobile */
@@ -112,6 +126,7 @@ body {
     padding: 10px;
   }
 }
+
 
 .myNavbar .navbar-brand,
 .myNavbar .offcanvas-title {
