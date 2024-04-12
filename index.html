@@ -1,1213 +1,553 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Niken & Wira 💍</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/Images/Logo-title2.jpg" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="simplyCountdown.theme.default.css" />
-    <script src="./simplyCountdown.min.js"></script>
-  </head>
-  <body>
-    <section
-      id="hero"
-      class="hero w-100 h-100 p-3 mx-auto d-flex text-center justify-content-center align-items-center text-white">
-      <main class="hero-body rounded p-4">
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
-        <h1>Niken & Wira</h1>
-        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
-        <div id="countdown" class="simply-countdown mx-auto"></div>
-        <a href="#home" class="btn btn-lg mt-4" onclick="enableScrollHero()"
-          >Lihat Undangan</a
-        >
-      </main>
-    </section>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-transparent sticky-top myNavbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Endeavour</a>
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Endeavour</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#info">Info</a>
-              <a class="nav-link" href="#story">Story</a>
-              <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#gifts">Gifts</a>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Niken & Wira 💍</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/Images/Logo-title2.jpg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="simplyCountdown.theme.default.css" />
+  <script src="./simplyCountdown.min.js"></script>
+</head>
+
+<body>
+  <section id="hero"
+    class="hero w-100 h-100 p-3 mx-auto d-flex text-center justify-content-center align-items-center text-white">
+    <main class="hero-body rounded p-4">
+      <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+      <h1>Niken & Wira</h1>
+      <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+      <div id="countdown" class="simply-countdown mx-auto"></div>
+      <a href="#home" class="btn btn-lg mt-4" onclick="enableScrollHero()">Lihat Undangan</a>
+    </main>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md bg-transparent sticky-top myNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Endeavour</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Endeavour</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#info">Info</a>
+            <a class="nav-link" href="#story">Story</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#rsvp">RSVP</a>
+            <a class="nav-link" href="#gifts">Gifts</a>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- ----- -->
-
-    <section id="home" class="home">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h3>Acara Pernikahan</h3>
-            <h4>Diselenggarakan pada 20 April 2024 di Subang, Jawa Barat.</h4>
-            <p>
-              Oleh karena itu, dengan segala hormat, kami mengundang Bapak/Ibu,
-              Saudara/i, untuk hadir pada acara pernikahan kami.
-            </p>
-          </div>
-        </div>
-
-        <div class="row couple">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-8 text-end">
-                <h3>Wirafadly Ahmad, S.Pd.</h3>
-                <p>
-                  Putra kedua dari <br />
-                  Bpk. Martono, S.Pd., M.Si. <br />
-                  dan <br />
-                  Ibu Sri Nurani
-                </p>
-              </div>
-              <div class="col-4">
-                <img
-                  src="./assets/Images/wira.jpg"
-                  alt="Wirafadly"
-                  class="img-responsive rounded-circle" />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 couple-left">
-            <div class="row">
-              <div class="col-4">
-                <img
-                  src="./assets/Images/niken.jpg"
-                  alt="Niken"
-                  class="img-responsive rounded-circle" />
-              </div>
-              <div class="col-8 text-start">
-                <h3>Niken Sonia Astuti, A.Md.</h3>
-                <p>
-                  Putri pertama dari <br />
-                  Bpk. Dedi Sumarsono<br />
-                  dan <br/>
-                  Ibu Endang Kurniati, S.Pd.Kim.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="info" class="info">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <img
-              src="./assets/Images/Gor.png"
-              alt="GOR GWS"
-              class="rounded-4 my-4" />
-            <p class="alamat">
-              Alamat: GRQ6+667, Jl. Raya Kamarung, Pagaden, Kec. Pagaden,
-              Kabupaten Subang, Jawa Barat 41252
-            </p>
-            <p>GOR Graha Winaya Sabha, sebelah SDN Kamarung. </p>
-            <a
-              href="https://maps.app.goo.gl/n4j8eY5UQoCQxYFg8"
-              target="_blank"
-              class="btn btn-sm"
-              >Click to Show a Map</a
-            >
-            <p class="description">
-              Diharapkan untuk tidak salah alamat dan tanggal. manakala tiba di
-              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
-              pernikahan, bisa jadi anda salah jadwal atau salah tempat.
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-5 col-10">
-            <div class="card text-center">
-              <div class="card-header">Akad Nikah</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6">
-                    <i class="bi bi-clock"></i>
-                    <span>Sabtu, 20 April 2024 </span>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>10.00 WIB </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 col-10">
-            <div class="card text-center card-2">
-              <div class="card-header">Resepsi</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6">
-                    <i class="bi bi-clock"></i>
-                    <span>Sabtu, 20 April 2024 </span>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>11.00 - 13.00 WIB </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="story" class="story my-5">
-      <h1 class="mb-4">Love Story</h1>
-      <ul>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Desember 2021</div>
-          <div class="title">Awal Bertemu</div>
-          <div class="descr">
-            Bertemu sebagai teman kerja di LPK Hanaman Indramayu
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Mei 2022</div>
-          <div class="title">Dekat</div>
-          <div class="descr">
-            Mulai mengenali lebih dekat satu sama lain
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Desember 2022</div>
-          <div class="title">Long Distance Relationship (LDR)</div>
-          <div class="descr">
-            Hubungan jarak jauh Indonesia - Jepang dikarenakan Niken Sonia Astuti yang harus bekerja di Jepang
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Juli 2023 </div>
-          <div class="title">Wirafadly Ahmad menyusul ke Jepang</div>
-          <div class="descr">
-             LDR antar negara yang berbeda waktu 2 jam, dan menjalani LDR antar negara selama 7 bulan. lalu akhirnya Wirafadly Ahmad dan Niken Sonia Astuti berada dalam satu negara, namun berbeda kota di Jepang.
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Maret 2024</div>
-          <div class="title">Lamaran</div>
-          <div class="descr">
-            Setelah berdiskusi oleh kedua belah pihak, akhirnya keluarga Wirafadly Ahmad datang ke subang untuk menemui keluarga Niken Sonia Astuti dengan maksud untuk mengikat Niken Sonia Astuti menjadi pendamping hidup Wirafadly Ahmad. Dan keluarga Niken Sonia Astuti menyetujui hal tersebut.
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date"> 20 April 2025 </div>
-          <div class="title">Hari Pernikahan</div>
-          <div class="descr">
-             Akhirnya, Cinta Wirafadly Ahmad dan Niken Sonia Astuti seperti layaknya bunga sakura yang bersemi pada bulan April.
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section id="gallery" class="gallery">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center my-5">
-            <h2>Galeri Foto</h2>
-          </div>
-        </div>
-
-        <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2">
-          <div class="col mt-3">
-            <a
-              href='./assets/Images/gallery/1.jpg'
-              data-toggle="lightbox"
-              data-gallery="example-gallery"
-              class="col-sm-4">
-              <img
-                src="./assets/Images/gallery/1.jpg"
-                alt="dummy foto"
-                class="img-fluid w-100 rounded" />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="./assets/Images/gallery/2.jpg"
-              data-toggle="lightbox"
-              data-gallery="example-gallery"
-              class="col-sm-4">
-              <img
-                src="./assets/Images/gallery/2.jpg"
-                alt="dummy foto"
-                class="img-fluid w-100 rounded" />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="./assets/Images/gallery/3.jpg"
-              data-toggle="lightbox"
-              data-gallery="example-gallery"
-              class="col-sm-4">
-              <img
-                src="./assets/Images/gallery/3.jpg"
-                alt="dummy foto"
-                class="img-fluid w-100 rounded" />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="./assets/Images/gallery/4.jpg"
-              data-toggle="lightbox"
-              data-gallery="example-gallery"
-              class="col-sm-4">
-              <img
-                src="./assets/Images/gallery/4.jpg"
-                alt="dummy foto"
-                class="img-fluid w-100 rounded" />
-            </a>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <section id="rsvp" class="rsvp">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
-          </div>
-          <form
-            class="row row-cols-md-auto g-3 align-items-center justify-content-center"
-            method="post"
-            action="https://script.google.com/macros/s/AKfycbx6aB-e8EZnBlZugP7UqiQFjee2SPAT-KWggaWtfp8t1oja38WxdEifzbNkItCSpbPIVw/exec"
-            id="my-form">
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="jumlah" class="form-label">Jumlah</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="jumlah"
-                  name="jumlah"
-                  value="1"
-                  min="1"
-                  max="5"
-                  length="1" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="status" class="form-label">Kehadiran</label>
-                <select name="status" id="status" class="form-select">
-                  <option selected>Pilih salah satu</option>
-                  <option value="1">Hadir</option>
-                  <option value="0">Tidak Hadir</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary">Konfirmasi</button>
-            </div>
-          </form>
-        </div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Pesan-pesan untuk Pengantin</h2>
-            <p>Beri pesan-pesan kepada para pengantin</p>
-          </div>
-
-          
-          <form
-            class="row row-cols-lg-auto g-3 align-items-center justify-content-center"
-            method="post"
-            action="https://script.google.com/macros/s/AKfycbz9hpQgzbxZTedPqs8aGihKIUVdzt-EQYOdAJt64e81H3RaEJmTsr2e368DjMxsJSv9/exec"
-            id="my-form2">
-            <div class="col-12 message">
-              <div class="mb-3">
-                <label for="namasender" class="form-label">Nama Pengirim</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="namasender"
-                  name="namasender" />
-              </div>
-              <div class="mb-3">
-                <label for="relation" class="form-label">Kenalan dari</label>
-                <select name="relation" id="relation" class="form-select">
-                  <option selected value="Wirafadly">Wirafadly Ahmad</option>
-                  <option value="Niken">Niken Sonia Astuti</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea
-                  class="form-control"
-                  id="pesan"
-                  name="pesan"
-                  rows="3"></textarea>
-              </div>
-              <div class="mb-3">
-                <button class="btn btn-primary">Kirim Pesan</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="row justify-content-center mt-4">
-          <div class="card message-card">
-            <div class="card-header text-center fw-bold">
-              Pesan-pesan untuk pengantin
-            </div>
-            <div class="card-body" id="message-body">
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title d-flex justify-content-start align-items-start"><h4>Wira </h4> <p class="ms-3"> (Kenalan dari...)</p> </div>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-                    
-      </div>
-    </section>
-
-    <section class="gifts" id="gifts">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>ungkapan tanda kasih</span>
-            <h2>Kirim Hadiah 🎁</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-              architecto!
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <div class="fw-bold">BCA</div>
-                0374031143 - NIKEN SONIA ASTUTI
-              </li>
-              <li class="list-group-item">
-                <div class="fw-bold">MANDIRI</div>
-                1340020608534 - NIKEN SONIA ASTUTI
-              </li>
-              <li class="list-group-item">
-                <div class="fw-bold">SEABANK</div>
-                901440437355 - NIKEN SONIA ASTUTI
-              </li>
-              <li class="list-group-item">
-                <div class="fw-bold">JAPAN POST BANK</div>
-                17160-37522251 ニケン　ソニア　アストゥティ
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="audio-container">
-      <audio id="bgm" autoplay loop>
-        <source src="./assets/audio/audio.mp3" type="audio/mp3">
-      </audio>
-
-      <div class="audio-icon-wrapper" style="">
-        <i class="bi bi-disc"></i>
       </div>
     </div>
+  </nav>
+  <!-- ----- -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h3>Acara Pernikahan</h3>
+          <h4>Diselenggarakan pada 20 April 2024 di Subang, Jawa Barat.</h4>
+          <p>
+            Oleh karena itu, dengan segala hormat, kami mengundang Bapak/Ibu,
+            Saudara/i, untuk hadir pada acara pernikahan kami.
+          </p>
+        </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+      <div class="row couple">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-8 text-end">
+              <h3>Wirafadly Ahmad, S.Pd.</h3>
+              <p>
+                Putra kedua dari <br />
+                Bpk. Martono, S.Pd., M.Si. <br />
+                dan <br />
+                Ibu Sri Nurani
+              </p>
+            </div>
+            <div class="col-4">
+              <img src="./assets/Images/wira.jpg" alt="Wirafadly" class="img-responsive rounded-circle" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 couple-left">
+          <div class="row">
+            <div class="col-4">
+              <img src="./assets/Images/niken.jpg" alt="Niken" class="img-responsive rounded-circle" />
+            </div>
+            <div class="col-8 text-start">
+              <h3>Niken Sonia Astuti, A.Md.</h3>
+              <p>
+                Putri pertama dari <br />
+                Bpk. Dedi Sumarsono<br />
+                dan <br />
+                Ibu Endang Kurniati, S.Pd.Kim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      simplyCountdown("#countdown", {
-        year: 2024, // required
-        month: 4, // required
-        day: 20, // required
-        hours: 8, // Default is 0 [0-23] integer
-        minutes: 0, // Default is 0 [0-59] integer
-        seconds: 0, // Default is 0 [0-59] integer
-        words: {
-          //words displayed into the countdown
-          days: { singular: "Hari", plural: "Hari" },
-          hours: { singular: "Jam", plural: "Jam" },
-          minutes: { singular: "menit", plural: "menit" },
-          seconds: { singular: "detik", plural: "detik" },
-        },
-        plural: true, //use plurals
-        inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
-        inlineClass: "simply-countdown-inline", //inline css span class in case of inline = true
-        // in case of inline set to false
-        enableUtc: false,
-        onEnd: function () {
-          // your code
-          return;
-        },
-        refresh: 1000, //default refresh every 1s
-        sectionClass: "simply-section", //section css class
-        amountClass: "simply-amount", // amount css class
-        wordClass: "simply-word", // word css class
-        zeroPad: false,
-        countUp: false, // enable count up if set to true
-      });
-    </script>
+  <section id="info" class="info">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Informasi Acara</h2>
+          <img src="./assets/Images/Gor.png" alt="GOR GWS" class="rounded-4 my-4" />
+          <p class="alamat">
+            Alamat: GRQ6+667, Jl. Raya Kamarung, Pagaden, Kec. Pagaden,
+            Kabupaten Subang, Jawa Barat 41252
+          </p>
+          <p>GOR Graha Winaya Sabha, sebelah SDN Kamarung. </p>
+          <a href="https://maps.app.goo.gl/n4j8eY5UQoCQxYFg8" target="_blank" class="btn btn-sm">Click to Show a Map</a>
+          <p class="description">
+            Diharapkan untuk tidak salah alamat dan tanggal. manakala tiba di
+            tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+            pernikahan, bisa jadi anda salah jadwal atau salah tempat.
+          </p>
+        </div>
+      </div>
 
-    <script>
-      const rootElement = document.querySelector(":root");
-      function disableScrollHero() {
-        const y = window.pageYOffset || document.documentElement.scrollTop;
-        const x = window.pageXOffset || document.documentElement.scrollLeft;
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-5 col-10">
+          <div class="card text-center">
+            <div class="card-header">Akad Nikah</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock"></i>
+                  <span>Sabtu, 20 April 2024 </span>
+                </div>
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>10.00 WIB </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10">
+          <div class="card text-center card-2">
+            <div class="card-header">Resepsi</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock"></i>
+                  <span>Sabtu, 20 April 2024 </span>
+                </div>
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>11.00 - 13.00 WIB </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        window.onscroll = function () {
-          window.scrollTo(y, x);
-        };
-        rootElement.style.scrollBehavior = "auto";
-      }
+  <section id="story" class="story my-5">
+    <h1 class="mb-4">Love Story</h1>
+    <ul>
+      <li style="--accent-color: #f14e95">
+        <div class="date">Desember 2021</div>
+        <div class="title">Awal Bertemu</div>
+        <div class="descr">
+          Bertemu sebagai teman kerja di LPK Hanaman Indramayu
+        </div>
+      </li>
+      <li style="--accent-color: #f14e95">
+        <div class="date">Mei 2022</div>
+        <div class="title">Dekat</div>
+        <div class="descr">
+          Mulai mengenali lebih dekat satu sama lain
+        </div>
+      </li>
+      <li style="--accent-color: #f14e95">
+        <div class="date">Desember 2022</div>
+        <div class="title">Long Distance Relationship (LDR)</div>
+        <div class="descr">
+          Hubungan jarak jauh Indonesia - Jepang dikarenakan Niken Sonia Astuti yang harus bekerja di Jepang
+        </div>
+      </li>
+      <li style="--accent-color: #f14e95">
+        <div class="date">Juli 2023 </div>
+        <div class="title">Wirafadly Ahmad menyusul ke Jepang</div>
+        <div class="descr">
+          LDR antar negara yang berbeda waktu 2 jam, dan menjalani LDR antar negara selama 7 bulan. lalu akhirnya
+          Wirafadly Ahmad dan Niken Sonia Astuti berada dalam satu negara, namun berbeda kota di Jepang.
+        </div>
+      </li>
+      <li style="--accent-color: #f14e95">
+        <div class="date">Maret 2024</div>
+        <div class="title">Lamaran</div>
+        <div class="descr">
+          Setelah berdiskusi oleh kedua belah pihak, akhirnya keluarga Wirafadly Ahmad datang ke subang untuk menemui
+          keluarga Niken Sonia Astuti dengan maksud untuk mengikat Niken Sonia Astuti menjadi pendamping hidup Wirafadly
+          Ahmad. Dan keluarga Niken Sonia Astuti menyetujui hal tersebut.
+        </div>
+      </li>
+      <li style="--accent-color: #f14e95">
+        <div class="date"> 20 April 2025 </div>
+        <div class="title">Hari Pernikahan</div>
+        <div class="descr">
+          Akhirnya, Cinta Wirafadly Ahmad dan Niken Sonia Astuti seperti layaknya bunga sakura yang bersemi pada bulan
+          April.
+        </div>
+      </li>
+    </ul>
+  </section>
 
-      function enableScrollHero() {
-        window.onscroll = function () {
-          rootElement.style.scrollBehavior = "smooth";
-        };
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center my-5">
+          <h2>Galeri Foto</h2>
+        </div>
+      </div>
 
+      <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2">
+        <div class="col mt-3">
+          <a href='./assets/Images/gallery/1.jpg' data-toggle="lightbox" data-gallery="example-gallery"
+            class="col-sm-4">
+            <img src="./assets/Images/gallery/1.jpg" alt="dummy foto" class="img-fluid w-100 rounded" />
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="./assets/Images/gallery/2.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+            class="col-sm-4">
+            <img src="./assets/Images/gallery/2.jpg" alt="dummy foto" class="img-fluid w-100 rounded" />
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="./assets/Images/gallery/3.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+            class="col-sm-4">
+            <img src="./assets/Images/gallery/3.jpg" alt="dummy foto" class="img-fluid w-100 rounded" />
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="./assets/Images/gallery/4.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+            class="col-sm-4">
+            <img src="./assets/Images/gallery/4.jpg" alt="dummy foto" class="img-fluid w-100 rounded" />
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="rsvp" class="rsvp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+        </div>
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="post"
+          action="https://script.google.com/macros/s/AKfycbx6aB-e8EZnBlZugP7UqiQFjee2SPAT-KWggaWtfp8t1oja38WxdEifzbNkItCSpbPIVw/exec"
+          id="my-form">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" value="1" min="1" max="5"
+                length="1" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Kehadiran</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="1">Hadir</option>
+                <option value="0">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" id="btnConfirm">Konfirmasi</button>
+          </div>
+        </form>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Pesan-pesan untuk Pengantin</h2>
+          <p>Beri pesan-pesan kepada para pengantin</p>
+        </div>
+
+
+        <form class="row row-cols-lg-auto g-3 align-items-center justify-content-center" method="post"
+          action="https://script.google.com/macros/s/AKfycbz9hpQgzbxZTedPqs8aGihKIUVdzt-EQYOdAJt64e81H3RaEJmTsr2e368DjMxsJSv9/exec"
+          id="my-form2">
+          <div class="col-12 message">
+            <div class="mb-3">
+              <label for="namasender" class="form-label">Nama Pengirim</label>
+              <input type="text" class="form-control" id="namasender" name="namasender" />
+            </div>
+            <div class="mb-3">
+              <label for="relation" class="form-label">Kenalan dari</label>
+              <select name="relation" id="relation" class="form-select">
+                <option selected value="Wirafadly">Wirafadly Ahmad</option>
+                <option value="Niken">Niken Sonia Astuti</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" name="pesan" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary" id="btnSend">Kirim Pesan</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="card message-card">
+          <div class="card-header text-center fw-bold">
+            Pesan-pesan untuk pengantin
+          </div>
+          <div class="card-body" id="message-body">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title d-flex justify-content-start align-items-start">
+                  <h4>Wira </h4>
+                  <p class="ms-3"> (Kenalan dari...)</p>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="gifts" id="gifts">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>ungkapan tanda kasih</span>
+          <h2>Kirim Hadiah 🎁</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            architecto!
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="fw-bold">BCA</div>
+              0374031143 - NIKEN SONIA ASTUTI
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">MANDIRI</div>
+              1340020608534 - NIKEN SONIA ASTUTI
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">SEABANK</div>
+              901440437355 - NIKEN SONIA ASTUTI
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">JAPAN POST BANK</div>
+              17160-37522251 ニケン　ソニア　アストゥティ
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="audio-container">
+    <audio id="bgm" loop>
+      <source src="./assets/audio/audio.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="audio-icon-wrapper" onclick="handleIconBgm()">
+      <i class="bi bi-play-circle" id="iconBgm"></i>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+  <script>
+    simplyCountdown("#countdown", {
+      year: 2024, // required
+      month: 4, // required
+      day: 20, // required
+      hours: 8, // Default is 0 [0-23] integer
+      minutes: 0, // Default is 0 [0-59] integer
+      seconds: 0, // Default is 0 [0-59] integer
+      words: {
+        //words displayed into the countdown
+        days: { singular: "Hari", plural: "Hari" },
+        hours: { singular: "Jam", plural: "Jam" },
+        minutes: { singular: "menit", plural: "menit" },
+        seconds: { singular: "detik", plural: "detik" },
+      },
+      plural: true, //use plurals
+      inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
+      inlineClass: "simply-countdown-inline", //inline css span class in case of inline = true
+      // in case of inline set to false
+      enableUtc: false,
+      onEnd: function () {
+        // your code
+        return;
+      },
+      refresh: 1000, //default refresh every 1s
+      sectionClass: "simply-section", //section css class
+      amountClass: "simply-amount", // amount css class
+      wordClass: "simply-word", // word css class
+      zeroPad: false,
+      countUp: false, // enable count up if set to true
+    });
+  </script>
+
+  <script>
+    const rootElement = document.querySelector(":root");
+    const bgm = document.querySelector('#bgm');
+    const iconBgm = document.querySelector('#iconBgm');
+
+    var statusBgm = true;
+    function disableScrollHero() {
+      const y = window.pageYOffset || document.documentElement.scrollTop;
+      const x = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function () {
+        window.scrollTo(y, x);
+      };
+      rootElement.style.scrollBehavior = "auto";
+    }
+
+    function enableScrollHero() {
+      window.onscroll = function () {
+        rootElement.style.scrollBehavior = "smooth";
+      };
+
+      playAudio();
+    }
+
+    function handleIconBgm() {
+      if (statusBgm === true) {
+        pauseAudio();
+      } else {
         playAudio();
       }
+    }
 
-      function playAudio(){
-         const bgm = document.querySelector('#bgm');
-         bgm.play();
-      }
-      disableScrollHero();
-    </script>
+    function playAudio() {
+      bgm.play();
+      statusBgm = true;
+      iconBgm.classList.replace('bi-pause-circle', 'bi-play-circle');
+    }
 
-    <script>
-      window.addEventListener("load", function () {
-        const form = document.getElementById("my-form");
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
-            method: "POST",
-            body: data,
-          }).then(() => {
+    function pauseAudio() {
+      bgm.pause();
+      statusBgm = false;
+      iconBgm.classList.replace('bi-play-circle', 'bi-pause-circle');
+    }
+    disableScrollHero();
+  </script>
+
+  <script>
+    window.addEventListener("load", function () {
+      const form = document.getElementById("my-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        const btnConfirm = document.querySelector('#btnConfirm');
+        btnConfirm.innerHTML = 'tunggu...';
+        fetch(action, {
+          method: "POST",
+          body: data,
+        })
+          .then(() => {
             alert("Terimakasih telah mengonfirmasi kehadiran Anda!");
+            btnConfirm.innerHTML = 'Konfirmasi';
+          })
+          .catch(() => {
+            alert("Konfirmasi gagal dilakukan");
+            btnConfirm.innerHTML = 'Konfirmasi';
           });
-        });
       });
-      window.addEventListener("load", function () {
-        const form = document.getElementById("my-form2");
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
-            method: "POST",
-            body: data,
-          }).then(() => {
-            alert("Terimakasih telah memberikan pesan kepada para pengantin!");
-          });
-        });
-      });
+    });
+    window.addEventListener("load", function () {
+      const form = document.getElementById("my-form2");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        const btnSend = document.querySelector('#btnSend');
+        btnSend.innerHTML = 'tunggu...';
 
-      // URL web app yang telah Anda buat dengan Google Apps Script
-      const url =
-        "https://script.google.com/macros/s/AKfycbz9hpQgzbxZTedPqs8aGihKIUVdzt-EQYOdAJt64e81H3RaEJmTsr2e368DjMxsJSv9/exec";
-      
-      const msgbody = document.querySelector('#message-body');
-
-      // Lakukan permintaan GET menggunakan Fetch API
-      fetch(url)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.json();
+        fetch(action, {
+          method: "POST",
+          body: data,
+        }).then(() => {
+          alert("Terimakasih telah memberikan pesan kepada para pengantin!");
+          btnSend.innerHTML = 'Konfirmasi';
         })
-        .then((data) => {
-          data.sort((a, b) => new Date(b.Tanggal) - new Date(a.Tanggal));
-          let cardsHTML = data.map(function(name){
-            return `<div class="card mt-2">
-                <div class="card-body">
-                  <div class="card-title d-flex justify-content-start align-items-start">
-                    <h4>${name.namasender} </h4> 
-                    <p class="ms-3"> (Kenalan dari ${name.relation})</p> 
-                  </div>
-                  <p class="card-text">
-                    ${name.pesan}
-                  </p>
-                </div>
-              </div>`
-          });
-          var allCardsHTML = cardsHTML.join('');
-
-          msgbody.innerHTML = allCardsHTML;
-
-          console.log("Data from Google Sheets:", data);
-          // Lakukan operasi lain dengan data yang diterima
-        })
-        .catch((error) => {
-          console.error(
-            "There was a problem with your fetch operation:",
-            error
-          );
-        });
-    </script>
-  </body>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Niken & Wira 💍</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/Images/Logo-title2.jpg" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="simplyCountdown.theme.default.css" />
-    <script src="./simplyCountdown.min.js"></script>
-  </head>
-  <body>
-    <section
-      id="hero"
-      class="hero w-100 h-100 p-3 mx-auto d-flex text-center justify-content-center align-items-center text-white">
-      <main class="hero-body rounded p-4">
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
-        <h1>Niken & Wira</h1>
-        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
-        <div id="countdown" class="simply-countdown mx-auto"></div>
-        <a href="#home" class="btn btn-lg mt-4" onclick="enableScrollHero()"
-          >Lihat Undangan</a
-        >
-      </main>
-    </section>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-transparent sticky-top myNavbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Endeavour</a>
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Endeavour</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#info">Info</a>
-              <a class="nav-link" href="#story">Story</a>
-              <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#gifts">Gifts</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- ----- -->
-
-    <section id="home" class="home">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h3>Acara Pernikahan</h3>
-            <h4>Diselenggarakan pada 20 April 2024 di Subang, Jawa Barat.</h4>
-            <p>
-              Oleh karena itu, dengan segala hormat, kami mengundang Bapak/Ibu,
-              Saudara/i, untuk hadir pada acara pernikahan kami.
-            </p>
-          </div>
-        </div>
-
-        <div class="row couple">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-8 text-end">
-                <h3>Wirafadly Ahmad, S.Pd.</h3>
-                <p>
-                  Putra kedua dari <br />
-                  Bpk. Martono, S.Pd., M.Si. <br />
-                  dan <br />
-                  Ibu Sri Nurani
-                </p>
-              </div>
-              <div class="col-4">
-                <img
-                  src="./assets/Images/wira.jpg"
-                  alt="Wirafadly"
-                  class="img-responsive rounded-circle" />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 couple-left">
-            <div class="row">
-              <div class="col-4">
-                <img
-                  src="./assets/Images/niken.jpg"
-                  alt="Niken"
-                  class="img-responsive rounded-circle" />
-              </div>
-              <div class="col-8 text-start">
-                <h3>Niken Sonia Astuti, A.Md.</h3>
-                <p>
-                  Putri pertama dari <br />
-                  Bpk. Dedi Sumarsono<br />
-                  dan <br/>
-                  Ibu Endang Kurniati, S.Pd.Kim.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="info" class="info">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <img
-              src="./assets/Images/Gor.png"
-              alt="GOR GWS"
-              class="rounded-4 my-4" />
-            <p class="alamat">
-              Alamat: GRQ6+667, Jl. Raya Kamarung, Pagaden, Kec. Pagaden,
-              Kabupaten Subang, Jawa Barat 41252
-            </p>
-            <p>GOR Graha Winaya Sabha, sebelah SDN Kamarung. </p>
-            <a
-              href="https://maps.app.goo.gl/n4j8eY5UQoCQxYFg8"
-              target="_blank"
-              class="btn btn-sm"
-              >Click to Show a Map</a
-            >
-            <p class="description">
-              Diharapkan untuk tidak salah alamat dan tanggal. manakala tiba di
-              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
-              pernikahan, bisa jadi anda salah jadwal atau salah tempat.
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-5 col-10">
-            <div class="card text-center">
-              <div class="card-header">Akad Nikah</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6">
-                    <i class="bi bi-clock"></i>
-                    <span>Sabtu, 20 April 2024 </span>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>10.00 WIB </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 col-10">
-            <div class="card text-center card-2">
-              <div class="card-header">Resepsi</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6">
-                    <i class="bi bi-clock"></i>
-                    <span>Sabtu, 20 April 2024 </span>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>11.00 - 13.00 WIB </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="story" class="story my-5">
-      <h1 class="mb-4">Love Story</h1>
-      <ul>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Desember 2021</div>
-          <div class="title">Awal Bertemu</div>
-          <div class="descr">
-            Bertemu sebagai teman kerja di LPK Hanaman Indramayu
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Mei 2022</div>
-          <div class="title">Dekat</div>
-          <div class="descr">
-            Mulai mengenali lebih dekat satu sama lain
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Desember 2022</div>
-          <div class="title">Long Distance Relationship (LDR)</div>
-          <div class="descr">
-            Hubungan jarak jauh Indonesia - Jepang dikarenakan Niken Sonia Astuti yang harus bekerja di Jepang
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Juli 2023 </div>
-          <div class="title">Wirafadly Ahmad menyusul ke Jepang</div>
-          <div class="descr">
-             LDR antar negara yang berbeda waktu 2 jam, dan menjalani LDR antar negara selama 7 bulan. lalu akhirnya Wirafadly Ahmad dan Niken Sonia Astuti berada dalam satu negara, namun berbeda kota di Jepang.
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date">Maret 2024</div>
-          <div class="title">Lamaran</div>
-          <div class="descr">
-            Setelah berdiskusi oleh kedua belah pihak, akhirnya keluarga Wirafadly Ahmad datang ke subang untuk menemui keluarga Niken Sonia Astuti dengan maksud untuk mengikat Niken Sonia Astuti menjadi pendamping hidup Wirafadly Ahmad. Dan keluarga Niken Sonia Astuti menyetujui hal tersebut.
-          </div>
-        </li>
-        <li style="--accent-color: #f14e95">
-          <div class="date"> 20 April 2025 </div>
-          <div class="title">Hari Pernikahan</div>
-          <div class="descr">
-             Akhirnya, Cinta Wirafadly Ahmad dan Niken Sonia Astuti seperti layaknya bunga sakura yang bersemi pada bulan April.
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section id="gallery" class="gallery">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center my-5">
-            <h2>Galeri Foto</h2>
-          </div>
-        </div>
-
-        <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2">
-          <div class="col mt-3">
-            <a
-              href='./assets/Images/gallery/1.jpg'
-              data-toggle="lightbox"
-              data-gallery="example-gallery"
-              class="col-sm-4">
-              <img
-                src="./assets/Images/gallery/1.jpg"
-                alt="dummy foto"
-                class="img-fluid w-100 rounded" />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="./assets/Images/gallery/2.jpg"
-              data-toggle="lightbox"
-              data-gallery="example-gallery"
-              class="col-sm-4">
-              <img
-                src="./assets/Images/gallery/2.jpg"
-                alt="dummy foto"
-                class="img-fluid w-100 rounded" />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="./assets/Images/gallery/3.jpg"
-              data-toggle="lightbox"
-              data-gallery="example-gallery"
-              class="col-sm-4">
-              <img
-                src="./assets/Images/gallery/3.jpg"
-                alt="dummy foto"
-                class="img-fluid w-100 rounded" />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="./assets/Images/gallery/4.jpg"
-              data-toggle="lightbox"
-              data-gallery="example-gallery"
-              class="col-sm-4">
-              <img
-                src="./assets/Images/gallery/4.jpg"
-                alt="dummy foto"
-                class="img-fluid w-100 rounded" />
-            </a>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <section id="rsvp" class="rsvp">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
-          </div>
-          <form
-            class="row row-cols-md-auto g-3 align-items-center justify-content-center"
-            method="post"
-            action="https://script.google.com/macros/s/AKfycbx6aB-e8EZnBlZugP7UqiQFjee2SPAT-KWggaWtfp8t1oja38WxdEifzbNkItCSpbPIVw/exec"
-            id="my-form">
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="jumlah" class="form-label">Jumlah</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="jumlah"
-                  name="jumlah"
-                  value="1"
-                  min="1"
-                  max="5"
-                  length="1" />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="status" class="form-label">Kehadiran</label>
-                <select name="status" id="status" class="form-select">
-                  <option selected>Pilih salah satu</option>
-                  <option value="1">Hadir</option>
-                  <option value="0">Tidak Hadir</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary">Konfirmasi</button>
-            </div>
-          </form>
-        </div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Pesan-pesan untuk Pengantin</h2>
-            <p>Beri pesan-pesan kepada para pengantin</p>
-          </div>
-
-          
-          <form
-            class="row row-cols-lg-auto g-3 align-items-center justify-content-center"
-            method="post"
-            action="https://script.google.com/macros/s/AKfycbz9hpQgzbxZTedPqs8aGihKIUVdzt-EQYOdAJt64e81H3RaEJmTsr2e368DjMxsJSv9/exec"
-            id="my-form2">
-            <div class="col-12 message">
-              <div class="mb-3">
-                <label for="namasender" class="form-label">Nama Pengirim</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="namasender"
-                  name="namasender" />
-              </div>
-              <div class="mb-3">
-                <label for="relation" class="form-label">Kenalan dari</label>
-                <select name="relation" id="relation" class="form-select">
-                  <option selected value="Wirafadly">Wirafadly Ahmad</option>
-                  <option value="Niken">Niken Sonia Astuti</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea
-                  class="form-control"
-                  id="pesan"
-                  name="pesan"
-                  rows="3"></textarea>
-              </div>
-              <div class="mb-3">
-                <button class="btn btn-primary">Kirim Pesan</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="row justify-content-center mt-4">
-          <div class="card message-card">
-            <div class="card-header text-center fw-bold">
-              Pesan-pesan untuk pengantin
-            </div>
-            <div class="card-body" id="message-body">
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title d-flex justify-content-start align-items-start"><h4>Wira </h4> <p class="ms-3"> (Kenalan dari...)</p> </div>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-                    
-      </div>
-    </section>
-
-    <section class="gifts" id="gifts">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>ungkapan tanda kasih</span>
-            <h2>Kirim Hadiah 🎁</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-              architecto!
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <div class="fw-bold">BCA</div>
-                0374031143 - NIKEN SONIA ASTUTI
-              </li>
-              <li class="list-group-item">
-                <div class="fw-bold">MANDIRI</div>
-                1340020608534 - NIKEN SONIA ASTUTI
-              </li>
-              <li class="list-group-item">
-                <div class="fw-bold">SEABANK</div>
-                901440437355 - NIKEN SONIA ASTUTI
-              </li>
-              <li class="list-group-item">
-                <div class="fw-bold">JAPAN POST BANK</div>
-                17160-37522251 ニケン　ソニア　アストゥティ
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="audio-container">
-      <audio id="bgm" loop>
-        <source src="./assets/audio/audio.mp3" type="audio/mp3">
-      </audio>
-
-      <div class="audio-icon-wrapper" onclick="handleIconBgm()">
-        <i class="bi bi-play-circle" id="iconBgm"></i>
-      </div>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
-
-    <script>
-      simplyCountdown("#countdown", {
-        year: 2024, // required
-        month: 4, // required
-        day: 20, // required
-        hours: 8, // Default is 0 [0-23] integer
-        minutes: 0, // Default is 0 [0-59] integer
-        seconds: 0, // Default is 0 [0-59] integer
-        words: {
-          //words displayed into the countdown
-          days: { singular: "Hari", plural: "Hari" },
-          hours: { singular: "Jam", plural: "Jam" },
-          minutes: { singular: "menit", plural: "menit" },
-          seconds: { singular: "detik", plural: "detik" },
-        },
-        plural: true, //use plurals
-        inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
-        inlineClass: "simply-countdown-inline", //inline css span class in case of inline = true
-        // in case of inline set to false
-        enableUtc: false,
-        onEnd: function () {
-          // your code
-          return;
-        },
-        refresh: 1000, //default refresh every 1s
-        sectionClass: "simply-section", //section css class
-        amountClass: "simply-amount", // amount css class
-        wordClass: "simply-word", // word css class
-        zeroPad: false,
-        countUp: false, // enable count up if set to true
+          .catch(() => {
+            alert("Konfirmasi gagal dilakukan");
+            btnSend.innerHTML = 'Konfirmasi';
+          });;
       });
-    </script>
+    });
 
-    <script>
-      const rootElement = document.querySelector(":root");
-      const bgm = document.querySelector('#bgm');
-      const iconBgm = document.querySelector('#iconBgm');
+    // URL web app yang telah Anda buat dengan Google Apps Script
+    const url =
+      "https://script.google.com/macros/s/AKfycbz9hpQgzbxZTedPqs8aGihKIUVdzt-EQYOdAJt64e81H3RaEJmTsr2e368DjMxsJSv9/exec";
 
-      var statusBgm = true;
-      function disableScrollHero() {
-        const y = window.pageYOffset || document.documentElement.scrollTop;
-        const x = window.pageXOffset || document.documentElement.scrollLeft;
-
-        window.onscroll = function () {
-          window.scrollTo(y, x);
-        };
-        rootElement.style.scrollBehavior = "auto";
-      }
-
-      function enableScrollHero() {
-        window.onscroll = function () {
-          rootElement.style.scrollBehavior = "smooth";
-        };
-
-        playAudio();
-      }
-
-      function handleIconBgm() {
-        if(statusBgm === true){
-          pauseAudio();
-        }else{
-          playAudio();
+    const msgbody = document.querySelector('#message-body'); 
+    // Lakukan permintaan GET menggunakan Fetch API
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
         }
-      }
-
-      function playAudio(){
-         bgm.play();
-         statusBgm = true;
-        iconBgm.classList.replace('bi-pause-circle','bi-play-circle');
-      }
-
-      function pauseAudio(){
-        bgm.pause();
-        statusBgm = false;
-        iconBgm.classList.replace('bi-play-circle', 'bi-pause-circle');
-      }
-      disableScrollHero();
-    </script>
-
-    <script>
-      window.addEventListener("load", function () {
-        const form = document.getElementById("my-form");
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
-            method: "POST",
-            body: data,
-          }).then(() => {
-            alert("Terimakasih telah mengonfirmasi kehadiran Anda!");
-          });
-        });
-      });
-      window.addEventListener("load", function () {
-        const form = document.getElementById("my-form2");
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
-            method: "POST",
-            body: data,
-          }).then(() => {
-            alert("Terimakasih telah memberikan pesan kepada para pengantin!");
-          });
-        });
-      });
-
-      // URL web app yang telah Anda buat dengan Google Apps Script
-      const url =
-        "https://script.google.com/macros/s/AKfycbz9hpQgzbxZTedPqs8aGihKIUVdzt-EQYOdAJt64e81H3RaEJmTsr2e368DjMxsJSv9/exec";
-      
-      const msgbody = document.querySelector('#message-body');
-
-      // Lakukan permintaan GET menggunakan Fetch API
-      fetch(url)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.json();
-        })
-        .then((data) => {
-          data.sort((a, b) => new Date(b.Tanggal) - new Date(a.Tanggal));
-          let cardsHTML = data.map(function(name){
-            return `<div class="card mt-2">
+        return response.json();
+      })
+      .then((data) => {
+        data.sort((a, b) => new Date(b.Tanggal) - new Date(a.Tanggal));
+        let cardsHTML = data.map(function (name) {
+          return `<div class="card mt-2">
                 <div class="card-body">
                   <div class="card-title d-flex justify-content-start align-items-start">
                     <h4>${name.namasender} </h4> 
@@ -1218,22 +558,21 @@
                   </p>
                 </div>
               </div>`
-          });
-          var allCardsHTML = cardsHTML.join('');
-
-          msgbody.innerHTML = allCardsHTML;
-
-          console.log("Data from Google Sheets:", data);
-          // Lakukan operasi lain dengan data yang diterima
-        })
-        .catch((error) => {
-          console.error(
-            "There was a problem with your fetch operation:",
-            error
-          );
         });
-    </script>
-  </body>
+        var allCardsHTML = cardsHTML.join('');
+
+        msgbody.innerHTML = allCardsHTML;
+
+        console.log("Data from Google Sheets:", data);
+        // Lakukan operasi lain dengan data yang diterima
+      })
+      .catch((error) => {
+        console.error(
+          "There was a problem with your fetch operation:",
+          error
+        );
+      });
+  </script>
+</body>
+
 </html>
-
-
