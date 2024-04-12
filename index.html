@@ -396,7 +396,7 @@
     </audio>
 
     <div class="audio-icon-wrapper" onclick="handleIconBgm()">
-      <i class="bi bi-play-circle" id="iconBgm"></i>
+      <i class="bi bi-play-circle icon" id="iconBgm"></i>
     </div>
   </div>
 
@@ -515,7 +515,7 @@
         const data = new FormData(form);
         const action = e.target.action;
         const btnSend = document.querySelector('#btnSend');
-        btnSend.innerHTML = 'tunggu...';
+        btnSend.innerHTML = 'menigirim...';
 
         fetch(action, {
           method: "POST",
